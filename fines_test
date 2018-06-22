@@ -1,0 +1,11 @@
+def gcd(a, b):
+  assert a > 0 and b > 0
+  assert type(a) == int and type(b) == int
+  while b != 0:
+    r = a % b
+    b = a
+    a = r
+  return a
+
+if __name__ == "__main__":
+    gcd(1, 0.5)
